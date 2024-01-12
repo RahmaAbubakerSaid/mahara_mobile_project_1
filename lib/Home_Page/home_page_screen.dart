@@ -26,6 +26,7 @@ class HomePageScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsetsDirectional.only(start: 15.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   HomePageHeader(),
                   see_all(name: "Trending"),
