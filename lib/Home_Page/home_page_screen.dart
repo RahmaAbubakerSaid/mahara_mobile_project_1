@@ -29,7 +29,12 @@ class HomePageScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   HomePageHeader(),
-                  see_all(name: "Trending"),
+                  see_all(
+                    name: "Trending",
+                    onSeeClicked: () {
+                      print("Trending");
+                    },
+                  ),
                   SizedBox(
                     height: 30.0,
                   ),
@@ -37,7 +42,12 @@ class HomePageScreen extends StatelessWidget {
                   SizedBox(
                     height: 30.0,
                   ),
-                  see_all(name: "Most Taken"),
+                  see_all(
+                    name: "Most Taken",
+                    onSeeClicked: () {
+                      print("Most Taken");
+                    },
+                  ),
                   SizedBox(
                     height: 30.0,
                   ),

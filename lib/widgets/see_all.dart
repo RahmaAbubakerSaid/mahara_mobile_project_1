@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 class see_all extends StatelessWidget {
   const see_all({
     super.key,
-    required this.name});
+    required this.name,
+    required this.onSeeClicked});
 
     final name;
+    final VoidCallback onSeeClicked;
   @override
   Widget build(BuildContext context) {
     return  Padding(
@@ -19,9 +21,7 @@ class see_all extends StatelessWidget {
                         ),
                         Spacer(),
                         InkWell(
-                          onTap: () {
-                            
-                          },
+                          onTap: onSeeClicked,
                           child: Text(
                             "See all",
                             style: TextStyle(
